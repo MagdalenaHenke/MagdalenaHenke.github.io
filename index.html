@@ -10,15 +10,17 @@
     html {
       font-family: sans-serif;
       box-sizing: border-box;
-      width: 100%;
-      height: 100%;
     }
 
     main {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    h1 {
+      font-size: 10vw; /* scale on smaller */
     }
 
     a:focus {
@@ -28,10 +30,10 @@
 </head>
 <body>
   <main>
-    <div class="centered">
+    <div>
       <h1>Mildly Amused</h1>
       <p>Really just a personal playground for learning stuff.</p>
-      <div class="mt-5" id="list-heading">Mildly amusing things:</div>
+      <div id="list-heading">Mildly amusing things:</div>
       <ul aria-labelledby="list-heading">
         <li><a href="/cssVariablesPlayground">a low key playground for css variables</a></li>
       </ul>
